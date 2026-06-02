@@ -635,3 +635,40 @@ body{
 
 }
 
+@media (max-width: 768px){
+
+    nav ul{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero{
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .hero h1{
+        font-size: 2.5rem;
+    }
+
+    .stats{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .portfolio-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .about-section,
+    .contact-section{
+        width: 95%;
+        margin: auto;
+    }
+
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+}
