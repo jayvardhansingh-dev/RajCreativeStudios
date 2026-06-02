@@ -203,19 +203,35 @@ h2{
     cursor:pointer;
 }
 
-footer{
+.footer{
     background:#000;
+    padding:20px 10px;
     text-align:center;
-    padding:30px;
-    border-top:2px solid #00aaff;
+    border-top:2px solid #00bfff;
 }
 
-.footer-info{
-    margin:15px 0;
+.footer p{
+    color:#ccc;
+    font-size:14px;
+    margin-bottom:10px;
 }
 
-.footer-info p{
-    margin:5px 0;
+.footer-links{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.footer-links a{
+    color:#00bfff;
+    text-decoration:none;
+    font-size:14px;
+    transition:0.3s;
+}
+
+.footer-links a:hover{
+    color:white;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
@@ -1001,5 +1017,49 @@ form button{
     width:100%;
 }
 }
+.share-btn{
+    background:#00bfff;
+    color:black;
+    border:none;
+    padding:15px 30px;
+    border-radius:50px;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
 
+.share-btn:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 20px #00bfff;
+}
 
+.share-float{
+    position:fixed;
+    bottom:90px;
+    left:20px;
+
+    width:60px;
+    height:60px;
+
+    background:#00bfff;
+    color:white;
+
+    border-radius:50%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:28px;
+    text-decoration:none;
+
+    box-shadow:0 0 20px rgba(0,191,255,0.6);
+
+    z-index:999;
+    transition:0.3s;
+}
+
+.share-float:hover{
+    transform:scale(1.1);
+}

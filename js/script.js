@@ -46,3 +46,16 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
+
+function shareWebsite() {
+    if (navigator.share) {
+        navigator.share({
+            title: "Raj Creative Studios",
+            text: "Check out Raj Creative Studios!",
+            url: window.location.href
+        });
+    } else {
+        navigator.clipboard.writeText(window.location.href);
+        alert("Website link copied!");
+    }
+}
