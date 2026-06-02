@@ -797,25 +797,55 @@ body{
     margin-bottom:15px;
 }
 
-nav ul{
+.menu-toggle{
+    display:none;
+    font-size:40px;
+    color:#00bfff;
+    cursor:pointer;
+    text-align:center;
+    width:100%;
+    margin-top:10px;
+}
+
+@media(max-width:768px){
+
+.menu-toggle{
+    display:block;
+}
+
+#navbar{
+    display:none;
+    width:100%;
+}
+
+#navbar.active{
+    display:block;
+}
+
+#navbar ul{
     display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
-    gap:8px;
-    padding:10px;
+    flex-direction:column;
+    gap:15px;
+    margin-top:15px;
 }
 
-nav ul li a{
-    font-size:14px;
-    padding:6px 10px;
-    border-radius:20px;
-    background:rgba(0,191,255,0.1);
+#navbar ul li{
+    list-style:none;
+}
+
+#navbar ul li a{
+    display:block;
+    background:#111827;
+    padding:12px;
+    border-radius:12px;
     color:white;
+    text-decoration:none;
 }
 
-nav ul li a:hover{
+#navbar ul li a:hover{
     background:#00bfff;
     color:black;
+}
 }
 
     .hero{
