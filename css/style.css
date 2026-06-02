@@ -872,3 +872,37 @@ body{
         height:auto;
     }
 }
+
+.menu-toggle{
+    display:none;
+    font-size:30px;
+    color:#00bfff;
+    cursor:pointer;
+}
+
+@media(max-width:768px){
+
+.menu-toggle{
+    display:block;
+}
+
+#navbar{
+    display:none;
+    width:100%;
+}
+
+#navbar.active{
+    display:block;
+}
+
+#navbar ul{
+    flex-direction:column;
+    text-align:center;
+    gap:15px;
+    padding:20px 0;
+}
+
+header{
+    flex-wrap:wrap;
+}
+}

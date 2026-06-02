@@ -5,3 +5,8 @@ document.getElementById("bookBtn").addEventListener("click", function(){
 document.getElementById("contactBtn").addEventListener("click", function(){
     window.location.href = "tel:+911234567890";
 });
+
+function toggleMenu() {
+    var nav = document.querySelector("nav");
+    nav.classList.toggle("active");
+}
