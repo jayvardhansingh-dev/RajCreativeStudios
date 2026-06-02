@@ -1063,3 +1063,38 @@ form button{
 .share-float:hover{
     transform:scale(1.1);
 }
+.lightbox{
+    display:none;
+
+    position:fixed;
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    background:rgba(0,0,0,0.95);
+
+    z-index:99999;
+
+    justify-content:center;
+    align-items:center;
+}
+
+.lightbox img{
+    max-width:90%;
+    max-height:90%;
+    border-radius:15px;
+    box-shadow:0 0 30px rgba(0,191,255,0.5);
+}
+
+.close-lightbox{
+    position:absolute;
+    top:20px;
+    right:30px;
+
+    font-size:40px;
+    color:white;
+
+    cursor:pointer;
+}
