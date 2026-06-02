@@ -789,35 +789,34 @@ body{
 /* =========================
    MOBILE RESPONSIVE FIX
 ========================= */
-
 @media (max-width:768px){
 
-    header{
-        padding:15px;
-        text-align:center;
-    }
+.logo{
+    font-size: 2rem;
+    text-align:center;
+    margin-bottom:15px;
+}
 
-    .logo{
-        font-size:2.2rem;
-        margin-bottom:15px;
-    }
+nav ul{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:8px;
+    padding:10px;
+}
 
-    nav ul{
-        display:flex;
-        flex-direction:row;
-        flex-wrap:wrap;
-        justify-content:center;
-        gap:15px;
-        padding:0;
-    }
+nav ul li a{
+    font-size:14px;
+    padding:6px 10px;
+    border-radius:20px;
+    background:rgba(0,191,255,0.1);
+    color:white;
+}
 
-    nav ul li{
-        margin:0;
-    }
-
-    nav a{
-        font-size:16px;
-    }
+nav ul li a:hover{
+    background:#00bfff;
+    color:black;
+}
 
     .hero{
         min-height:75vh;
@@ -905,4 +904,12 @@ body{
 header{
     flex-wrap:wrap;
 }
+}
+
+.hero h1{
+   font-size:3rem;
+}
+.package-card{
+   width:90%;
+   margin:auto;
 }
