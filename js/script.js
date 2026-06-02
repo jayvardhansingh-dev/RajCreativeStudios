@@ -1,8 +1,13 @@
-// Book Button
+// ======================
+// Raj Creative Studios
+// Main JavaScript File
+// ======================
+
+// Book Now Button
 const bookBtn = document.getElementById("bookBtn");
 
-if(bookBtn){
-    bookBtn.addEventListener("click", function(){
+if (bookBtn) {
+    bookBtn.addEventListener("click", function () {
         alert("Thank you for choosing Raj Creative Studios!");
     });
 }
@@ -10,13 +15,34 @@ if(bookBtn){
 // Contact Button
 const contactBtn = document.getElementById("contactBtn");
 
-if(contactBtn){
-    contactBtn.addEventListener("click", function(){
+if (contactBtn) {
+    contactBtn.addEventListener("click", function () {
         window.location.href = "tel:+917302313324";
     });
 }
 
-// Mobile Menu
+// Mobile Menu Toggle
 function toggleMenu() {
-    document.getElementById("navbar").classList.toggle("active");
+    const navbar = document.getElementById("navbar");
+
+    if (navbar) {
+        navbar.classList.toggle("active");
+    }
 }
+
+// Close Menu After Clicking a Link
+document.addEventListener("DOMContentLoaded", function () {
+
+    const navLinks = document.querySelectorAll("#navbar a");
+
+    navLinks.forEach(link => {
+        link.addEventListener("click", () => {
+            const navbar = document.getElementById("navbar");
+
+            if (navbar) {
+                navbar.classList.remove("active");
+            }
+        });
+    });
+
+});
