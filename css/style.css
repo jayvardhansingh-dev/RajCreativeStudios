@@ -23,7 +23,9 @@ header{
     font-weight:bold;
     color:#00aaff;
 }
-
+.logo{
+    font-size: 2rem;
+}
 nav ul{
     list-style:none;
     display:flex;
@@ -742,4 +744,25 @@ body{
         width: 95%;
         margin: auto;
     }
+}
+section{
+    min-height:auto;
+    padding:60px 20px;
+}
+
+
+@media(max-width:768px){
+    .packages-grid{
+        grid-template-columns:1fr;
+    }
+}
+
+.hero{
+    background:
+    linear-gradient(rgba(0,0,0,.7),
+    rgba(0,0,0,.7)),
+    url('../images/wedding.jpg');
+
+    background-size:cover;
+    background-position:center;
 }
