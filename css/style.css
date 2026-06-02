@@ -620,326 +620,110 @@ body{
     padding-top:80px;
 }
 
-@media(max-width:768px){
+
+/* ===== MOBILE MENU FIX ===== */
+
+.menu-toggle{
+    display:none;
+    font-size:35px;
+    color:#00bfff;
+    cursor:pointer;
+}
+
+@media (max-width:768px){
 
     header{
         flex-direction:column;
-        height:auto;
-        padding:20px;
-    }
-
-    .nav-links{
-        flex-wrap:wrap;
-        justify-content:center;
-        gap:15px;
-        margin-top:15px;
-    }
-
-}
-
-@media (max-width: 768px){
-
-    nav ul{
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .hero{
-        flex-direction: column;
-        text-align: center;
-        padding: 40px 20px;
-    }
-
-    .hero h1{
-        font-size: 2.5rem;
-    }
-
-    .stats{
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .portfolio-grid{
-        grid-template-columns: 1fr;
-    }
-
-    .about-section,
-    .contact-section{
-        width: 95%;
-        margin: auto;
-    }
-
-    img{
-        max-width: 100%;
-        height: auto;
-    }
-}
-/* ===== MOBILE FIX ===== */
-
-@media screen and (max-width:768px){
-
-    body{
-        overflow-x:hidden;
-    }
-
-    header{
         padding:15px;
-        flex-direction:column;
         text-align:center;
     }
 
     .logo{
-        font-size:2.2rem;
+        font-size:2rem;
         margin-bottom:10px;
     }
 
-    .nav-links,
-    nav ul{
-        display:flex;
-        flex-wrap:wrap;
-        justify-content:center;
-        gap:10px;
-    }
-
-    .nav-links a,
-    nav ul li a{
-        font-size:14px;
-    }
-
-    .hero{
-        min-height:70vh;
-        padding:40px 20px;
-        text-align:center;
-        background-attachment:scroll;
-    }
-
-    .hero h1{
-        font-size:3rem !important;
-        line-height:1.1;
-    }
-
-    .hero p{
-        font-size:18px;
-        margin-top:15px;
-    }
-
-    .btn,
-    .btn2{
+    .menu-toggle{
         display:block;
-        width:220px;
-        margin:15px auto;
+        width:100%;
         text-align:center;
+        margin:10px 0;
     }
 
-    .stats{
+    #navbar{
+        display:none;
+        width:100%;
+    }
+
+    #navbar.active{
+        display:block;
+    }
+
+    #navbar ul{
+        display:flex;
         flex-direction:column;
         align-items:center;
+        gap:12px;
+        padding:15px 0;
     }
 
-    .stat-box,
-    .stat-card{
-        width:90%;
-        max-width:320px;
+    #navbar ul li{
+        list-style:none;
     }
 
-    .portfolio-grid,
-    .services-grid,
-    .packages-grid{
-        grid-template-columns:1fr;
+    #navbar ul li a{
+        display:block;
+        width:180px;
+        background:#111827;
+        padding:12px;
+        border-radius:15px;
+        text-decoration:none;
+        color:white;
+        transition:0.3s;
     }
 
-    .portfolio-card img{
-        height:250px;
-    }
-
-    .service-card,
-    .package-card,
-    .contact-card,
-    .team-card{
-        width:100%;
-    }
-
-    .contact-section h1,
-    .services-section h1,
-    .packages-section h1,
-    .portfolio-section h1,
-    .about-section h1{
-        font-size:2.3rem;
-    }
-
-    .about-card{
-        padding:25px;
-    }
-
-    .about-card p{
-        font-size:16px;
-    }
-
-    .contact-form{
-        width:100%;
-    }
-
-    .whatsapp{
-        right:10px;
-        bottom:10px;
-        padding:12px 18px;
-        font-size:14px;
+    #navbar ul li a:hover{
+        background:#00bfff;
+        color:black;
     }
 }
-/* =========================
-   MOBILE RESPONSIVE FIX
-========================= */
-@media (max-width:768px){
-
-.logo{
-    font-size: 2rem;
-    text-align:center;
-    margin-bottom:15px;
-}
-
-.menu-toggle{
-    display:none;
-    font-size:40px;
-    color:#00bfff;
-    cursor:pointer;
-    text-align:center;
-    width:100%;
-    margin-top:10px;
-}
-
-@media(max-width:768px){
-
-.menu-toggle{
-    display:block;
-}
-
-#navbar{
-    display:none;
-    width:100%;
-}
-
-#navbar.active{
-    display:block;
-}
-
 #navbar ul{
-    display:flex;
-    flex-direction:column;
-    gap:15px;
-    margin-top:15px;
-}
-
-#navbar ul li{
     list-style:none;
 }
-
-#navbar ul li a{
-    display:block;
-    background:#111827;
-    padding:12px;
-    border-radius:12px;
-    color:white;
-    text-decoration:none;
+header{
+    position:relative;
 }
+@media (max-width:768px){
 
-#navbar ul li a:hover{
-    background:#00bfff;
-    color:black;
-}
-}
-
-    .hero{
-        min-height:75vh;
-        padding:40px 20px;
+    header{
+        position:relative;
+        flex-direction:column;
+        padding:15px;
         text-align:center;
     }
 
-    .hero h1{
-        font-size:2.5rem;
-        line-height:1.2;
+    .menu-toggle{
+        display:block;
+        width:100%;
+        text-align:center;
+        margin:10px 0;
     }
 
-    .hero p{
-        font-size:1.1rem;
+    #navbar{
+        display:none;
+        width:100%;
     }
 
-    .stats{
+    #navbar.active{
+        display:block;
+    }
+
+    #navbar ul{
+        list-style:none;
+        display:flex;
         flex-direction:column;
         align-items:center;
+        gap:12px;
+        padding:15px 0;
     }
-
-    .stat-box{
-        width:90%;
-    }
-
-    .services-grid,
-    .portfolio-grid,
-    .packages-grid{
-        grid-template-columns:1fr;
-    }
-
-    .portfolio-card img{
-        width:100%;
-        height:auto;
-    }
-
-    .contact-container{
-        width:95%;
-    }
-
-    .contact-info{
-        flex-direction:column;
-    }
-
-    input,
-    textarea{
-        width:100%;
-    }
-
-    img{
-        max-width:100%;
-        height:auto;
-    }
-}
-
-.menu-toggle{
-    display:none;
-    font-size:30px;
-    color:#00bfff;
-    cursor:pointer;
-}
-
-@media(max-width:768px){
-
-.menu-toggle{
-    display:block;
-}
-
-#navbar{
-    display:none;
-    width:100%;
-}
-
-#navbar.active{
-    display:block;
-}
-
-#navbar ul{
-    flex-direction:column;
-    text-align:center;
-    gap:15px;
-    padding:20px 0;
-}
-
-header{
-    flex-wrap:wrap;
-}
-}
-
-.hero h1{
-   font-size:3rem;
-}
-.package-card{
-   width:90%;
-   margin:auto;
 }
