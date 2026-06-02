@@ -56,21 +56,19 @@
 
                 </div>
 
-                <form class="contact-form">
+                <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
 
-                    <input type="text" placeholder="Your Name">
+    <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY">
 
-                    <input type="email" placeholder="Your Email">
+    <input type="text" name="name" placeholder="👤 Your Name" required>
 
-                    <input type="tel" placeholder="Phone Number">
+    <input type="email" name="email" placeholder="📧 Your Email" required>
 
-                    <textarea placeholder="Your Message"></textarea>
+    <textarea name="message" placeholder="💬 Tell us about your event..." required></textarea>
 
-                    <button type="submit">
-                        Send Message
-                    </button>
+    <button type="submit">Send Message 🚀</button>
 
-                </form>
+</form>
                 <a href="https://wa.me/7302313324" class="whatsapp">
                     WhatsApp Us
                 </a>

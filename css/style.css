@@ -800,3 +800,60 @@ header{
 }
 
 }
+/* Contact Form */
+.contact-form{
+    max-width:700px;
+    margin:50px auto;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    padding:18px;
+    border:none;
+    border-radius:15px;
+    background:#0b1830;
+    color:white;
+    font-size:16px;
+    box-shadow:0 0 10px rgba(0,191,255,0.2);
+}
+
+.contact-form textarea{
+    min-height:150px;
+    resize:none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+    outline:none;
+    box-shadow:0 0 20px #00bfff;
+}
+
+.contact-form button{
+    background:#00bfff;
+    color:white;
+    border:none;
+    padding:18px;
+    font-size:18px;
+    font-weight:bold;
+    border-radius:50px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.contact-form button:hover{
+    transform:translateY(-3px);
+    box-shadow:0 0 25px #00bfff;
+}
+
+/* Mobile */
+@media(max-width:768px){
+
+.contact-form{
+    width:90%;
+}
+
+}
