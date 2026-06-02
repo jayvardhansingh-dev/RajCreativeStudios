@@ -1,16 +1,22 @@
-document.getElementById("bookBtn").addEventListener("click", function(){
-    alert("Thank you for choosing Raj Creative Studios!");
-});
+// Book Button
+const bookBtn = document.getElementById("bookBtn");
 
-document.getElementById("contactBtn").addEventListener("click", function(){
-    window.location.href = "tel:+911234567890";
-});
-
-function toggleMenu() {
-    var nav = document.querySelector("nav");
-    nav.classList.toggle("active");
+if(bookBtn){
+    bookBtn.addEventListener("click", function(){
+        alert("Thank you for choosing Raj Creative Studios!");
+    });
 }
 
+// Contact Button
+const contactBtn = document.getElementById("contactBtn");
+
+if(contactBtn){
+    contactBtn.addEventListener("click", function(){
+        window.location.href = "tel:+917302313324";
+    });
+}
+
+// Mobile Menu
 function toggleMenu() {
     document.getElementById("navbar").classList.toggle("active");
 }
