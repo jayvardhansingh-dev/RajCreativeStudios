@@ -59,33 +59,32 @@ function shareWebsite() {
         alert("Website link copied!");
     }
 }
-function openLightbox(imageSrc){
+// Lightbox
+function openLightbox(imageSrc) {
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
 
-    document.getElementById("lightbox").style.display = "flex";
-
-    document.getElementById("lightbox-img").src = imageSrc;
+    lightbox.style.display = "flex";
+    lightboxImg.src = imageSrc;
 }
 
-function closeLightbox(){
-
+function closeLightbox() {
     document.getElementById("lightbox").style.display = "none";
 }
-document.getElementById("lightbox").addEventListener("click", function(e){
 
-    if(e.target === this){
-        closeLightbox();
+// Close when clicking outside image
+document.addEventListener("DOMContentLoaded", function () {
+
+    const lightbox = document.getElementById("lightbox");
+
+    if(lightbox){
+        lightbox.addEventListener("click", function(e){
+
+            if(e.target === this){
+                closeLightbox();
+            }
+
+        });
     }
 
 });
-
-function openLightbox(imageSrc){
-
-    document.getElementById("lightbox").style.display = "flex";
-
-    document.getElementById("lightbox-img").src = imageSrc;
-}
-
-function closeLightbox(){
-
-    document.getElementById("lightbox").style.display = "none";
-}

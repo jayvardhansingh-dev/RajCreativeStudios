@@ -165,8 +165,9 @@ h2{
     transition:0.4s;
 }
 
-.service-box:hover{
-    transform:translateY(-10px);
+.service-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 0 20px rgba(0,191,255,.4);
 }
 
 .about-gallery img{
@@ -928,8 +929,8 @@ header{
 
 .reviews-grid{
     display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:25px;
+    grid-template-columns:repeat(2,1fr);
+    gap: 20px;
 }
 .review-card{
     background:#08152d;
@@ -1034,11 +1035,11 @@ form button{
 }
 
 .hero-content h1{
-    font-size:42px;
+    font-size:80px;
 }
 
 .hero-image img{
-    width:100%;
+    width: 700px;;
 }
 
 }
@@ -1122,4 +1123,44 @@ form button{
     color:white;
 
     cursor:pointer;
+}
+.lightbox{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+
+    width:100vw;
+    height:100vh;
+
+    background:rgba(0,0,0,0.98);
+
+    justify-content:center;
+    align-items:center;
+
+    z-index:99999;
+}
+
+.lightbox img{
+    width:auto;
+    height:auto;
+
+    max-width:98vw;
+    max-height:98vh;
+
+    object-fit:contain;
+
+    border-radius:10px;
+}
+
+.close-lightbox{
+    position:absolute;
+    top:20px;
+    right:30px;
+
+    font-size:45px;
+    color:white;
+
+    cursor:pointer;
+    z-index:100000;
 }
