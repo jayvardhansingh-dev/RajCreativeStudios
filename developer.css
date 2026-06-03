@@ -1,0 +1,175 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#f3f2ef;
+}
+
+.profile-container{
+    max-width:1000px;
+    margin:30px auto;
+}
+
+.cover-banner{
+    height:250px;
+    background:linear-gradient(
+        135deg,
+        #0a66c2,
+        #004182
+    );
+    border-radius:15px 15px 0 0;
+}
+
+.profile-info{
+    background:white;
+    padding:30px;
+    text-align:center;
+    border-radius:0 0 15px 15px;
+    margin-bottom:20px;
+}
+
+.profile-photo{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid white;
+    margin-top:-120px;
+    background:white;
+}
+
+.profile-info h1{
+    color:#111827;
+    font-size:42px;
+    font-weight:700;
+}
+
+.verified{
+    background:#0a66c2;
+    color:white;
+    padding:6px 10px;
+    border-radius:50%;
+    font-size:16px;
+}
+
+.profile-info h3{
+    color:#555;
+    margin-top:8px;
+}
+
+.location{
+    margin-top:10px;
+    color:#666;
+}
+
+.action-buttons{
+    margin-top:20px;
+}
+
+.action-buttons a{
+    display:inline-block;
+    text-decoration:none;
+    padding:12px 25px;
+    border-radius:30px;
+    margin:5px;
+    background:#0a66c2;
+    color:white;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    margin-bottom:20px;
+}
+
+.card h2{
+    margin-bottom:15px;
+    color:#0a66c2;
+}
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.skills span{
+    background:#e8f3ff;
+    color:#0a66c2;
+    padding:10px 15px;
+    border-radius:20px;
+}
+
+.experience h3{
+    color:#0a66c2;
+}
+
+ul{
+    padding-left:20px;
+}
+
+li{
+    margin:10px 0;
+}
+.cover-banner{
+    height:280px;
+    background:url("images/banner.png");
+    background-size:cover;
+    background-position:center;
+}
+.profile-photo{
+    width:220px;
+    height:220px;
+    margin-top:-140px;
+}
+body{
+    background:#0f172a;
+    color:white;
+}
+
+.card{
+    background:#111827;
+}
+.stats{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+}
+
+.stat-card{
+    background:#111827;
+    border:1px solid rgba(0,191,255,.2);
+    padding:20px;
+    border-radius:15px;
+    width:130px;
+    text-align:center;
+}
+.socials{
+    text-align:center;
+    margin:30px 0;
+}
+
+.socials a{
+    display:inline-block;
+    padding:12px 25px;
+    margin:5px;
+    background:#0a66c2;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+}
+.dev-footer{
+    text-align:center;
+    padding:30px;
+    color:#aaa;
+}
+.card:hover{
+    transform:translateY(-5px);
+    transition:.3s;
+    box-shadow:0 0 20px rgba(0,191,255,.2);
+}
