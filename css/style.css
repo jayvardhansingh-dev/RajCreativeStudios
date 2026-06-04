@@ -737,6 +737,91 @@ to{
     transition:.4s;
 }
 /* =========================
+   REVIEW SECTION
+========================= */
+
+.review-form-section{
+    max-width:900px;
+    margin:80px auto;
+    padding:40px;
+    background:#071d4f;
+    border-radius:25px;
+    border:1px solid rgba(255,204,0,.2);
+    box-shadow:0 0 30px rgba(0,0,0,.3);
+    text-align:center;
+}
+
+.review-form-section h2{
+    font-size:42px;
+    color:#ffcc00;
+    margin-bottom:10px;
+}
+
+.review-form-section p{
+    color:#ddd;
+    margin-bottom:30px;
+}
+
+.review-form{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.review-form input,
+.review-form select,
+.review-form textarea{
+
+    width:100%;
+    padding:16px;
+    border:none;
+    border-radius:12px;
+
+    background:#021238;
+    color:white;
+
+    font-size:16px;
+    outline:none;
+
+    transition:.3s;
+}
+
+.review-form input:focus,
+.review-form select:focus,
+.review-form textarea:focus{
+
+    border:1px solid #ffcc00;
+    box-shadow:0 0 15px rgba(255,204,0,.3);
+}
+
+.review-form textarea{
+    min-height:150px;
+    resize:none;
+}
+
+.review-submit{
+
+    background:#ffcc00;
+    color:#000;
+
+    border:none;
+    padding:16px 40px;
+
+    border-radius:50px;
+    font-size:18px;
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.review-submit:hover{
+
+    transform:translateY(-3px);
+    box-shadow:0 0 25px rgba(255,204,0,.5);
+}
+/* =========================
    SERVICES
 ========================= */
 
