@@ -57,3 +57,16 @@ document.getElementById("clock").innerHTML =
 new Date().toLocaleTimeString();
 
 },1000);
+
+function shareWebsite() {
+    if (navigator.share) {
+        navigator.share({
+            title: "Raj Creative Studios",
+            text: "Capture your special moments with Raj Creative Studios",
+            url: "https://rajcreativestudios.xyz"
+        });
+    } else {
+        navigator.clipboard.writeText("https://rajcreativestudios.xyz");
+        alert("Website link copied!");
+    }
+}
