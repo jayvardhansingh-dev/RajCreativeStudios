@@ -1,272 +1,448 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Raj Creative Studios</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Raj Creative Studios</title>
 
-    <link rel="stylesheet" href="css/style.css">
-</head>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
 
-<body>
+    <body>
 
-    <!-- Header -->
-   <header>
-    <div class="logo">Raj Creative Studios</div>
-    
-
-    <div class="menu-toggle" onclick="toggleMenu()">
-        ☰
-    </div>
-
-    <nav id="navbar">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="packages.html">Packages</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-</header>
-<br>
-    <section class="hero-video">
-
-<video autoplay muted loop playsinline>
-    <source src="videos/Untitled (8).mp4" type="video/mp4">
-</video>
-
-<div class="hero-overlay">
-
-<h1>Capturing Moments,<br>Creating Memories</h1>
-
-<p>
-Professional Wedding Photography,
-Cinematic Videography & Event Coverage
-</p>
-
-<a href="contact.html" class="hero-btn">
-Book Now
-</a>
-
-</div>
-
-</section>
-    
-</section>
-<div class="divider"></div>
-<section class="stats">
-
-    <div class="team-container">
-
-    <div class="team-card">
-        <h2>📸 1000+</h2>
-        <p>Projects Completed</p>
-    </div>
-
-    <div class="team-card">
-        <h2>😊 1000+</h2>
-        <p>Happy Clients</p>
-    </div>
-
-    <div class="team-card">
-        <h2>🏆 Since 2004</h2>
-        <p>20+ Years Experience</p>
-    </div>
-
-</section>
-
-    
-    </section>
-    <div class="divider"></div>
-    <div class="about-card">
-  <h2>About Raj Creative Studios</h2>
-  <p>Since 2004, Raj Creative Studios has been capturing unforgettable moments through wedding photography, cinematic videography, pre-wedding shoots, birthday celebrations, and professional editing services. Our mission is to turn every special moment into a lifelong memory.</p>
-<br>
-<div class="divider"></div>
-<section class="trust-section">
-
-<h2>Why Choose Us</h2>
-
-<div class="trust-grid">
-
-<div class="trust-card">
-🏆
-<h3>20+ Years Experience</h3>
-</div>
-
-<div class="trust-card">
-📸
-<h3>1000+ Events Covered</h3>
-</div>
-
-<div class="trust-card">
-⭐
-<h3>Trusted By Families</h3>
-</div>
-
-</div>
-
-</section>
-
-    <div class="portfolio-grid">
-
-        <div class="portfolio-card">
-            <img src="images/wedding.jpg" alt="Wedding Shoot" onclick="openLightbox(this.src)">
-            <div class="overlay">
-                <h3>Wedding Shoot</h3>
+        <!-- Header -->
+        <header>
+            <div class="logo">
+                Raj Creative Studios
             </div>
-        </div>
 
-        <div class="portfolio-card">
-            <img src="images/prewedding.jpg" alt="Pre-Wedding" onclick="openLightbox(this.src)">
-            <div class="overlay">
-                <h3>Pre-Wedding</h3>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                ☰
             </div>
-        </div>
 
-        <div class="portfolio-card">
-            <img src="images/wedding2.jpg" alt="Ceremony" onclick="openLightbox(this.src)">
-            <div class="overlay">
-                <h3>Ceremony</h3>
+            <nav id="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="packages.html">Packages</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <br>
+        <section class="hero-video">
+
+            <video autoplay muted loop playsinline>
+                <source src="videos/Untitled (8).mp4" type="video/mp4">
+            </video>
+
+            <div class="hero-overlay">
+
+                <span class="hero-tag">
+                    Wedding Photography & Cinematic Films
+                </span>
+
+                <h1>
+                    Capturing Moments<br>
+                    Creating Memories
+                </h1>
+
+                <p>
+                    Professional Wedding Photography, Cinematic Videography,
+                    Pre-Wedding Shoots, Drone Coverage & Event Films.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="contact.html" class="hero-btn">
+                        📞 Book Now
+                    </a>
+
+                    <a href="portfolio.html" class="hero-btn-outline">
+                        📸 View Portfolio
+                    </a>
+
+                </div>
+
             </div>
-        </div>
 
-        <div class="portfolio-card">
-            <img src="images/wedding3.jpg" alt="Special Events" onclick="openLightbox(this.src)">
-            <div class="overlay">
-                <h3>Special Events</h3>
+        </section>
+
+        <section class="stats">
+
+            <div class="team-card">
+                <h2>1000+</h2>
+                <p>Projects Completed</p>
             </div>
-        </div>
-        <div class="gallery-btn">
-    <a href="https://drive.google.com/drive/folders/1QIlTbFfAQTJ77HQI9GhZ3mO6J340BMhM"
-       target="_blank"
-       class="gallery-link">
-       📸 Explore Complete Gallery
-    </a>
-</div>
 
-    </div>
+            <div class="team-card">
+                <h2>1000+</h2>
+                <p>Happy Clients</p>
+            </div>
 
-    <div class="divider"></div>
-    <section class="reviews">
+            <div class="team-card">
+                <h2>20+</h2>
+                <p>Years Experience</p>
+            </div>
 
-    <h2>What Our Clients Say</h2>
+        </section>
+        <section class="about-section">
 
-    <div class="review-grid">
+<div class="about-card">
 
-        <div class="review-card">
-            ⭐⭐⭐⭐⭐
-            <p>
-                Amazing wedding photography and editing.
-            </p>
-            <h4>Anjaly Chauhan</h4>
-        </div>
-
-        <div class="review-card">
-            ⭐⭐⭐⭐⭐
-            <p>
-                Professional team and cinematic videos.
-            </p>
-            <h4>Hariom Tomar</h4>
-        </div>
-
-        <div class="review-card">
-            ⭐⭐⭐⭐⭐
-            <p>
-                Best experience. Highly recommended.
-            </p>
-            <h4>Ajay Som</h4>
-        </div>
-        
-        <div class="review-card">
-            ⭐⭐⭐⭐⭐
-            <p>
-                Next Level Experience.
-            </p>
-            <h4>Ajay Tiwari</h4>
-        </div>
-
-    </div>
-
-</section>
-
-</section>
-
-    <!-- Services -->
-    <div class="service-grid">
-
-  <div class="service-card">📸 Wedding Photography</div>
-
-  <div class="service-card">🎥 Cinematic Videography</div>
-
-  <div class="service-card">❤️ Pre-Wedding Shoots</div>
-
-  <div class="service-card">🚁 Drone Coverage</div>
-
-  <div class="service-card">🎂 Birthday Events</div>
-
-  <div class="service-card">✨ Professional Editing</div>
-
-</div>
-
-
-    <div class="footer-links">
-        <a href="https://instagram.com/creativestudiosraj" target="_blank">Instagram</a>
-        <a href="https://wa.me/917302313324" target="_blank">WhatsApp</a>
-        <a href="mailto:creativestudiosraj@gmail.com">Email</a>
-    </div>
-    
-<footer>
-
-<h2>Raj Creative Studios</h2>
-
-<p>
-📍 Pilkhuwa, Uttar Pradesh
-</p>
-
-<p>
-📞 +91 7302313324
-</p>
-
-<p>
-📧 creativestudiosraj@gmail.com
-</p>
-
-<p>
-Capturing Moments • Creating Memories Since 2004
-</p>
-
-</footer>
-
-    <script src="js/script.js"></script>
-    <a href="tel:+917302313324" class="call-btn">
-    📞
-</a>
-<a href="https://www.rajcreativestudios.xyz" target="_blank" class="share-float">
-    🔗
-</a>
-<script src="js/script.js"></script>
-   <div id="lightbox" class="lightbox">
-
-    <span class="close-lightbox" onclick="closeLightbox()">
-        ✖
+    <span class="about-tag">
+        Since 2004
     </span>
 
-    <img id="lightbox-img" src="" alt="">
+    <h2>About Raj Creative Studios</h2>
+
+    <p>
+        For over 20 years, Raj Creative Studios has been capturing
+        unforgettable moments through wedding photography,
+        cinematic videography, pre-wedding shoots, birthday
+        celebrations and professional editing services.
+
+        We don't just capture photos —
+        we create memories that last forever.
+    </p>
 
 </div>
 
+<div class="trust-section">
 
-</body>
-<a
-href="https://wa.me/917302313324"
-target="_blank"
-class="whatsapp-btn">
+    <h2>Why Choose Us</h2>
 
-💬 Book Now
+    <div class="trust-grid">
 
-</a>
-</html>
+        <div class="trust-card">
+            <div class="trust-icon">🏆</div>
+            <h3>20+ Years Experience</h3>
+            <p>Trusted photography services since 2004.</p>
+        </div>
 
+        <div class="trust-card">
+            <div class="trust-icon">📸</div>
+            <h3>1000+ Events Covered</h3>
+            <p>Weddings, birthdays and special events.</p>
+        </div>
+
+        <div class="trust-card">
+            <div class="trust-icon">⭐</div>
+            <h3>Trusted By Families</h3>
+            <p>Creating beautiful memories for generations.</p>
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+            </section>
+
+            <section class="gallery">
+
+                <h2>📸 Featured Portfolio</h2>
+
+                <div class="gallery-grid">
+
+                    <div class="gallery-card">
+                        <img src="images/wedding.jpg"
+                            onclick="openLightbox(this.src)">
+                        <div class="gallery-overlay">
+                            Wedding Shoot
+                        </div>
+                    </div>
+
+                    <div class="gallery-card">
+                        <img src="images/wedding2.jpg"
+                            onclick="openLightbox(this.src)">
+                        <div class="gallery-overlay">
+                            Pre-Wedding
+                        </div>
+                    </div>
+
+                    <div class="gallery-card">
+                        <img src="images/wedding3.jpg"
+                            onclick="openLightbox(this.src)">
+                        <div class="gallery-overlay">
+                            Wedding Ceremony
+                        </div>
+                    </div>
+
+                    <div class="gallery-card">
+                        <img src="images/studio.png"
+                            onclick="openLightbox(this.src)">
+                        <div class="gallery-overlay">
+                            Studio Photography
+                        </div>
+                    </div>
+
+                    <div class="gallery-card">
+                        <img src="images/prewedding.jpg"
+                            onclick="openLightbox(this.src)">
+                        <div class="gallery-overlay">
+                            Couple Shoot
+                        </div>
+                    </div>
+
+                    <div class="gallery-card">
+                        <img src="images/birthday.jpg"
+                            onclick="openLightbox(this.src)">
+                        <div class="gallery-overlay">
+                            Birthday Event
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="gallery-btn">
+                    <a href="portfolio.html" class="hero-btn">
+                        View Full Portfolio
+                    </a>
+                </div>
+
+            </section>
+            <div class="divider"></div>
+            <section class="reviews">
+
+                <h2>⭐ What Our Clients Say</h2>
+
+                <div class="review-grid">
+
+                    <div class="review-card">
+                        <div class="quote">❝</div>
+                        <div class="stars">★★★★★</div>
+
+                        <p>
+                            Amazing wedding photography and editing.
+                            Every moment was captured beautifully.
+                        </p>
+
+                        <h4>Anjaly Chauhan</h4>
+                        <span>Wedding Client</span>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="quote">❝</div>
+                        <div class="stars">★★★★★</div>
+
+                        <p>
+                            Professional team and cinematic videos.
+                            Highly recommended for weddings.
+                        </p>
+
+                        <h4>Hariom Tomar</h4>
+                        <span>Cinematic Film Client</span>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="quote">❝</div>
+                        <div class="stars">★★★★★</div>
+
+                        <p>
+                            Best experience. Excellent photography,
+                            editing and delivery.
+                        </p>
+
+                        <h4>Ajay Som</h4>
+                        <span>Event Client</span>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="quote">❝</div>
+                        <div class="stars">★★★★★</div>
+
+                        <p>
+                            Next level experience and amazing team.
+                            Truly memorable work.
+                        </p>
+
+                        <h4>Ajay Tiwari</h4>
+                        <span>Wedding Client</span>
+                    </div>
+                    <div class="review-card">
+                        <div class="quote">❝</div>
+                        <div class="stars">★★★★★</div>
+
+                        <p>
+                            What a work? Next Level Done
+                        </p>
+
+                        <h4>Veer Tomar</h4>
+                        <span>Wedding Client</span>
+                    </div>
+                    <div class="review-card">
+                        <div class="quote">❝</div>
+                        <div class="stars">★★★★★</div>
+
+                        <p>
+                            Amazing Work
+                        </p>
+
+                        <h4>Naveen Chauhan</h4>
+                        <span>Wedding Client</span>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- Services -->
+            <section class="services">
+
+                <h2>✨ Our Services</h2>
+
+                <div class="service-grid">
+
+                    <div class="service-card">
+                        <div class="service-icon">📸</div>
+                        <h3>Wedding Photography</h3>
+                        <p>Capturing every special moment with stunning
+                            photography.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">🎥</div>
+                        <h3>Cinematic Videography</h3>
+                        <p>Professional wedding films with cinematic
+                            storytelling.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">❤️</div>
+                        <h3>Pre-Wedding Shoots</h3>
+                        <p>Creative and memorable pre-wedding photography
+                            sessions.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">🚁</div>
+                        <h3>Drone Coverage</h3>
+                        <p>Beautiful aerial shots to make your event
+                            unforgettable.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">🎂</div>
+                        <h3>Birthday Events</h3>
+                        <p>Professional coverage for birthdays and
+                            celebrations.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">✨</div>
+                        <h3>Professional Editing</h3>
+                        <p>Premium photo retouching and cinematic video
+                            editing.</p>
+                    </div>
+
+                </div>
+
+            </section>
+
+           <section class="cta">
+
+    <div class="cta-content">
+
+        <span class="cta-tag">
+            📸 Let's Create Something Amazing
+        </span>
+
+        <h2>
+            Ready To Capture Your Special Moments?
+        </h2>
+
+        <p>
+            Weddings, Pre-Wedding Shoots, Birthday Events,
+            Cinematic Films & Professional Photography.
+            Let us turn your precious memories into timeless stories.
+        </p>
+
+        <div class="cta-buttons">
+
+            <a href="contact.html" class="cta-btn">
+                📞 Book Your Event
+            </a>
+
+            <a href="https://wa.me/917302313324"
+               target="_blank"
+               class="cta-btn-outline">
+
+                💬 WhatsApp Now
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+          
+
+            <footer>
+
+                <h2>Raj Creative Studios</h2>
+
+                <p>
+                    📍 Pilkhuwa, Uttar Pradesh
+                </p>
+
+                <p>
+                    📞 +91 7302313324
+                </p>
+
+                <p>
+                    📧 creativestudiosraj@gmail.com
+                </p>
+
+                <p>
+                    Capturing Moments • Creating Memories Since 2004
+                </p>
+
+            </footer>
+
+            <!-- Call Button -->
+            <a href="tel:+917302313324" class="call-btn">
+                📞
+            </a>
+
+            <!-- Share Button -->
+            <a href="https://www.rajcreativestudios.xyz"
+                target="_blank"
+                class="share-float">
+                🔗
+            </a>
+
+            <!-- WhatsApp Button -->
+            <a href="https://wa.me/917302313324"
+                target="_blank"
+                class="whatsapp-btn">
+
+                💬 Book Now
+
+            </a>
+
+            <div id="lightbox" class="lightbox">
+
+                <span class="close-lightbox"
+                    onclick="closeLightbox()">
+                    ✕
+                </span>
+
+                <img id="lightbox-img" src alt>
+
+            </div>
+
+        </body>
+        <a
+            href="https://wa.me/917302313324"
+            target="_blank"
+            class="whatsapp-btn">
+
+            💬 Book Now
+
+        </a>
+    </html>
