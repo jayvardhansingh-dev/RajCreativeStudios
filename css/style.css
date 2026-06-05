@@ -397,17 +397,6 @@ to{
 }
 
 }
-@media(max-width:768px){
-
-.about-hero h1{
-    font-size:2.5rem;
-}
-
-.about-card{
-    padding:30px;
-}
-
-}
 
 /* =========================
    WHY CHOOSE US
@@ -1438,6 +1427,21 @@ footer p{
     text-decoration:none;
     font-weight:bold;
 }
+@media (max-width:768px){
+
+.hero-content h1{
+
+    font-size:42px;
+    line-height:1.2;
+
+    width:90%;
+    margin:auto;
+
+    word-break:normal;
+    overflow-wrap:normal;
+}
+
+}
 
 /* =========================
    FLOATING BUTTONS
@@ -2350,14 +2354,25 @@ header{
     padding:110px 20px 70px;
 }
 
+
+
 .hero-badge{
-    width:90%;
-    max-width:320px;
-    margin:auto;
-    font-size:12px;
-    padding:10px 15px;
+
+    display:inline-block;
+
+    width:auto;
+    max-width:90%;
+
+    padding:12px 20px;
+
+    font-size:15px;
+
     line-height:1.4;
+
+    white-space:normal;
 }
+
+
 
 .hero-content h1{
     font-size:2.8rem;
@@ -2386,15 +2401,27 @@ header{
 
 /* Cards */
 
-.about-card,
-.service-card,
-.review-card,
-.package-card,
-.contact-card,
-.team-card{
-    width:100%;
+@media (max-width:768px){
+
+.about-card{
+
+    width:95%;
     margin:auto;
-    padding:20px;
+
+    padding:25px;
+}
+
+.about-card h2{
+
+    font-size:34px;
+}
+
+.about-card p{
+
+    font-size:16px;
+    line-height:1.8;
+}
+
 }
 
 /* Grids */
@@ -2421,10 +2448,34 @@ img{
 
 /* Portfolio Images */
 
-.gallery-card img,
+@media (max-width:768px){
+
+.portfolio-grid{
+
+    grid-template-columns:1fr;
+}
+
 .portfolio-card img{
-    height:220px;
+
+    height:250px;
     object-fit:cover;
+}
+
+}
+
+/*Mobile Rule */
+*{
+    box-sizing:border-box;
+}
+
+img,
+video{
+    max-width:100%;
+    height:auto;
+}
+
+body{
+    overflow-x:hidden;
 }
 
 /* Footer */
@@ -2437,6 +2488,28 @@ img{
 
 footer h2{
     font-size:2rem;
+}
+@media (max-width:768px){
+
+.stats-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr;
+
+    gap:15px;
+}
+
+.stat-card{
+
+    padding:20px;
+}
+
+.stat-card h3{
+
+    font-size:32px;
+}
+
 }
 
 /* Floating Buttons */
