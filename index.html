@@ -38,7 +38,7 @@
         <section class="hero-video">
 
             <video autoplay muted loop playsinline>
-                <source src="videos/Untitled (8).mp4" type="video/mp4">
+                <source src="videos/rcs.mp4" type="video/mp4">
             </video>
 
             <div class="hero-overlay">
@@ -199,6 +199,22 @@
                         </div>
                     </div>
 
+                     <div class="gallery-card">
+                        <img src="images/4.jpg"
+                            onclick="openLightbox(this.src)">
+                        <div class="gallery-overlay">
+                            Wedding Event
+                        </div>
+                    </div>
+
+                     <div class="gallery-card">
+                        <img src="images/team.jpg"
+                            onclick="openLightbox(this.src)">
+                        <div class="gallery-overlay">
+                            Spacial Event
+                        </div>
+                    </div>
+
                 </div>
 
                 <div class="gallery-btn">
@@ -275,7 +291,7 @@
                         </p>
 
                         <h4>Veer Tomar</h4>
-                        <span>Wedding Client</span>
+                        <span>Student</span>
                     </div>
                     <div class="review-card">
                         <div class="quote">❝</div>
@@ -287,6 +303,29 @@
 
                         <h4>Naveen Chauhan</h4>
                         <span>Wedding Client</span>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="quote">❝</div>
+                        <div class="stars">★★★★★</div>
+
+                        <p>
+                            Ossam Work By Studio Team
+                        </p>
+
+                        <h4>Akshay Kumar</h4>
+                        <span>Wedding Shoot Client</span>
+                    </div>
+                    <div class="review-card">
+                        <div class="quote">❝</div>
+                        <div class="stars">★★★★★</div>
+
+                        <p>
+                            Great Work I Highly Recommended for weddings.
+                        </p>
+
+                        <h4>Shivika</h4>
+                        <span>Student</span>
                     </div>
 
                 </div>
@@ -341,6 +380,8 @@
                         <p>Premium photo retouching and cinematic video
                             editing.</p>
                     </div>
+
+                    
 
                 </div>
 
@@ -407,34 +448,20 @@
 
             </footer>
 
-            <!-- Call Button -->
-            <a href="tel:+917302313324" class="call-btn">
-                📞
-            </a>
-
             <!-- Share Button -->
-           <a href="https://wa.me/?text=https://rajcreativestudios.xyz"
-   target="_blank"
-   class="share-float">
-   🔗
-</a>
-            <!-- WhatsApp Button -->
-            <a href="https://wa.me/917302313324"
-                target="_blank"
-                class="whatsapp-btn">💬
+          <div class="floating-buttons">
 
-            </a>
+    <a href="tel:+917302313324" class="float-btn call-btn">
+        📞
+    </a>
 
-            <div id="lightbox" class="lightbox">
+    <a href="https://wa.me/?text=https://rajcreativestudios.xyz"
+       target="_blank"
+       class="float-btn share-btn">
+        🔗
+    </a>
 
-                <span class="close-lightbox"
-                    onclick="closeLightbox()">
-                    ✕
-                </span>
-
-                <img id="lightbox-img" src alt>
-
-            </div>
+</div>
             <script type="application/ld+json">
 {
  "@context":"https://schema.org",
@@ -454,9 +481,4 @@
 </script>
 <script src="js/script.js" defer></script>
         </body>
-        <a
-           <a href="https://wa.me/917302313324" class="float-btn">
-💬
-</a>
-        </a>
     </html>
