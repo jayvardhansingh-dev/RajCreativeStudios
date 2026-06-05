@@ -1442,6 +1442,26 @@ footer p{
 }
 
 }
+@media screen and (max-width:768px){
+
+.hero-content h1,
+.hero-overlay h1,
+.hero h1{
+
+    font-size:38px !important;
+
+    line-height:1.2 !important;
+
+    width:90% !important;
+
+    margin:auto !important;
+
+    text-align:center !important;
+
+    word-break:normal !important;
+}
+
+}
 
 /* =========================
    FLOATING BUTTONS
