@@ -1340,6 +1340,9 @@ footer p{
     .menu-toggle{
         display:block;
     }
+    .hero-tag{
+    white-space: nowrap;
+}
 
     #navbar{
         display:none;
