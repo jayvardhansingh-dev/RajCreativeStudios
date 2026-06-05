@@ -2354,6 +2354,71 @@ header{
 section{
     animation:fadeIn 0.8s ease;
 }
+@media (max-width:768px){
+
+.hero-badge{
+    font-size:14px;
+    padding:10px 20px;
+    max-width:90%;
+    text-align:center;
+    line-height:1.5;
+}
+
+}
+@media (max-width:768px){
+
+.hero-content h1{
+    font-size:55px;
+    line-height:1.1;
+}
+
+}
+@media (max-width:768px){
+
+.hero-content p{
+    font-size:18px;
+    width:90%;
+    margin:auto;
+    line-height:1.6;
+}
+
+}
+@media (max-width:768px){
+
+.hero-buttons{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    align-items:center;
+}
+
+.hero-btn{
+    width:250px;
+    text-align:center;
+}
+
+}
+@media (max-width:768px){
+
+.float-btn{
+    width:55px;
+    height:55px;
+    font-size:22px;
+}
+
+.floating-buttons{
+    right:12px;
+    bottom:15px;
+}
+
+}
+@media (max-width:768px){
+
+.hero{
+    min-height:90vh;
+}
+
+}
 
 @keyframes fadeIn{
 
