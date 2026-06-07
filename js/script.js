@@ -100,10 +100,6 @@ function closeLightbox(){
 
     document.getElementById("lightbox").style.display="none";
 }
-function toggleMenu(){
-
-document
-.getElementById("navbar")
-.classList.toggle("active");
-
+function toggleMenu() {
+    document.getElementById("navbar").classList.toggle("active");
 }
