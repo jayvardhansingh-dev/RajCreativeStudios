@@ -152,3 +152,45 @@ header{
 }
 
 }
+@media (max-width:768px){
+
+.menu-toggle{
+    display:block;
+    font-size:30px;
+    cursor:pointer;
+    color:white;
+}
+
+#navbar{
+    display:none;
+    position:absolute;
+    top:80px;
+    left:0;
+    width:100%;
+    background:#000814;
+    z-index:9999;
+}
+
+#navbar.active{
+    display:block;
+}
+
+#navbar ul{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    padding:20px;
+}
+
+#navbar ul li{
+    list-style:none;
+}
+
+#navbar ul li a{
+    color:white;
+    font-size:18px;
+    text-decoration:none;
+    display:block;
+}
+
+}
