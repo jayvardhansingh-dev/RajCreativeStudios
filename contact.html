@@ -41,7 +41,7 @@
                         📞 Let's Connect
                         
                     </span>
-                    <h1><br>Book Your Shoot</h1>
+                    <h1><br>Book Your Dream Shoot</h1>
 
                     <p>
                         
@@ -88,67 +88,83 @@
             </section>
             <section class="booking-section" id="booking-form">
 
-                <h2>Book Your Event</h2>
+    <div class="booking-header">
 
-                <p>
-                    Fill the form below and we'll contact you shortly.
-                </p>
+        <span class="booking-tag">
+            📸 Reserve Your Date
+        </span>
 
-                <form action="https://api.web3forms.com/submit" method="POST"
-                    class="booking-form">
+        <h2>Book Your Dream Event</h2>
 
-                    <input type="hidden"
-                        name="access_key"
-                        value="611ba3b2-67ca-427a-9649-5a6fee0b3359">
+        <p>
+            Weddings • Pre-Wedding • Cinematic Films • Birthday Events
+        </p>
 
-                    <input type="text"
-                        name="name"
-                        placeholder="Your Full Name"
-                        required>
+    </div>
 
-                    <input type="email"
-                        name="email"
-                        placeholder="Email Address"
-                        required>
+    <form action="https://api.web3forms.com/submit"
+          method="POST"
+          class="booking-form">
 
-                    <input type="tel"
-                        name="phone"
-                        placeholder="Phone Number"
-                        required>
+        <input type="hidden"
+               name="access_key"
+               value="611ba3b2-67ca-427a-9649-5a6fee0b3359">
 
-                    <input type="date"
-                        name="event_date"
-                        required>
+        <div class="form-grid">
 
-                    <select name="event_type" required>
+            <input type="text"
+                   name="name"
+                   placeholder="👤 Full Name"
+                   required>
 
-                        <option value>Select Event Type</option>
-                        <option>Wedding</option>
-                        <option>Pre-Wedding</option>
-                        <option>Birthday</option>
-                        <option>Engagement</option>
-                        <option>Corporate Event</option>
-                        <option>Other</option>
+            <input type="email"
+                   name="email"
+                   placeholder="📧 Email Address"
+                   required>
 
-                    </select>
+            <input type="tel"
+                   name="phone"
+                   placeholder="📞 Phone Number"
+                   required>
 
-                    <input type="text"
-                        name="location"
-                        placeholder="Event Location">
+            <input type="date"
+                   name="event_date"
+                   required>
 
-                    <textarea
-                        name="message"
-                        rows="6"
-                        placeholder="Tell us about your event">
-</textarea>
+        </div>
 
-                    <button type="submit">
-                        📸 Book Consultation
-                    </button>
+        <select name="event_type" required>
 
-                </form>
+            <option value="">
+                🎉 Select Event Type
+            </option>
 
-            </section>
+            <option>Wedding</option>
+            <option>Pre-Wedding</option>
+            <option>Birthday</option>
+            <option>Engagement</option>
+            <option>Corporate Event</option>
+            <option>Other</option>
+
+        </select>
+
+        <input type="text"
+               name="location"
+               placeholder="📍 Event Location">
+
+        <textarea
+            name="message"
+            rows="6"
+            placeholder="Tell us about your event...">
+        </textarea>
+
+        <button type="submit" class="booking-btn">
+            📸 Book Consultation
+        </button>
+
+    </form>
+
+</section>
             <section class="map-section">
 
                 <h2>Visit Our Studio</h2>
